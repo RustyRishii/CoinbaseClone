@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:coinbaseclone/earn.dart';
-import 'package:coinbaseclone/image.dart';
-import 'package:coinbaseclone/invite.dart';
 import 'package:coinbaseclone/main.dart';
 import 'notifications.dart';
 

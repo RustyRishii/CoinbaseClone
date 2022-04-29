@@ -10,14 +10,12 @@ class home extends StatefulWidget {
 }
 
 class _homeState extends State<home> {
-  var TextStyle1 = const TextStyle(
-      color: Colors.black, fontSize: 30, fontWeight: FontWeight.bold);
-
-  //TextStyle1 is for the Buy,sell,send,receive,convert BUTTONS
-
-  var TextSyle2 = const TextStyle(color: Colors.white, fontSize: 15);
 
   //TextStyle1 is for the Buy,sell,send,receive,convert TEXTS
+  var TextStyle1 = const TextStyle(color: Colors.black, fontSize: 30, fontWeight: FontWeight.bold);
+
+  //TextStyle1 is for the Buy,sell,send,receive,convert BUTTONS
+  var TextSyle2 = const TextStyle(color: Colors.white, fontSize: 15);
 
   @override
   Widget build(BuildContext context) {
@@ -199,3 +197,4 @@ class _homeState extends State<home> {
     );
   }
 }
+
