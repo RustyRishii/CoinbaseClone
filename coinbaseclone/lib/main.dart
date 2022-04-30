@@ -56,11 +56,9 @@ class _MyAppState extends State<MyApp> {
           selectedFontSize: 15,
           currentIndex: CurrentInt,
           items: const [
-            BottomNavigationBarItem(
-                icon: Icon(Icons.home_outlined), label: "Home"),
+            BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: "Home"),
             BottomNavigationBarItem(icon: Icon(Icons.pie_chart), label: "Assets"),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.trending_up), label: "Trade"),
+            BottomNavigationBarItem(icon: Icon(Icons.trending_up), label: "Trade"),
             BottomNavigationBarItem(icon: Icon(Icons.circle), label: "Pay"),
           ],
         ),
@@ -71,7 +69,6 @@ class _MyAppState extends State<MyApp> {
 }
 
 
-
 class draw extends StatefulWidget {
   const draw({Key? key}) : super(key: key);
 
@@ -80,6 +77,9 @@ class draw extends StatefulWidget {
 }
 
 class _drawState extends State<draw> {
+
+  var DrawButtonTextStyle = TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -141,12 +141,9 @@ class _drawState extends State<draw> {
                       MaterialPageRoute(builder: (context) => const earn()),
                     );
                   },
-                  child: const Text(
+                  child: Text(
                     "💸  Earn yield",
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 25,
-                        color: Colors.white),
+                    style: DrawButtonTextStyle,
                   ),
                 ),
               ), //Earn yield
@@ -161,12 +158,9 @@ class _drawState extends State<draw> {
                         ));
                     print('Clicked');
                   },
-                  child: const Text(
+                  child: Text(
                     "📨  Invite Friends",
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 25,
-                        color: Colors.white),
+                    style: DrawButtonTextStyle,
                   ),
                 ),
               ), //Invite Friends
@@ -174,12 +168,9 @@ class _drawState extends State<draw> {
                 padding: const EdgeInsets.fromLTRB(0, 0, 105, 0),
                 child: TextButton(
                   onPressed: () {},
-                  child: const Text(
+                  child: Text(
                     "🎁  Send a gift",
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 25,
-                        color: Colors.white),
+                    style: DrawButtonTextStyle,
                   ),
                 ),
               ), //Send a gift
@@ -192,12 +183,9 @@ class _drawState extends State<draw> {
                       MaterialPageRoute(builder: (context) => const wallet()),
                     );
                   },
-                  child: const Text(
+                  child: Text(
                     "🎁  Get Coinbase Wallet",
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 25,
-                        color: Colors.white),
+                    style: DrawButtonTextStyle,
                   ),
                 ),
               ), //Get Coinbase Wallet

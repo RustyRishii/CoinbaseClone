@@ -27,10 +27,10 @@ class _walletState extends State<wallet> {
           Stack(
             children: <Widget>[
               Row(
-                children: <Widget>[
-                  const Padding(
+                children: const  <Widget>[
+                  Padding(
                     padding: EdgeInsets.fromLTRB(25, 50, 0, 0),
-                    child: const Text(
+                    child:  Text(
                       "⇆",
                       style: TextStyle(
                           fontSize: 22,
@@ -38,7 +38,7 @@ class _walletState extends State<wallet> {
                           fontWeight: FontWeight.bold),
                     ),
                   ),
-                  const Padding(
+                   Padding(
                     padding: EdgeInsets.fromLTRB(17, 50, 0, 0),
                     child: Text(
                       "Trade more assets",
@@ -50,14 +50,13 @@ class _walletState extends State<wallet> {
                   ),
                 ],
               ), //Trade assets Row
-              const Padding(
+              Padding(
                 padding: EdgeInsets.fromLTRB(67, 77.5, 0, 0),
-                child: const Text(
+                child: Text(
                   "Keep your cypto secure and trade even more assets",
                   style: TextStyle(color: Colors.grey, fontSize: 19),
                 ),
               ), //Context
-
               Row(
                 children: <Widget>[
                   const Padding(

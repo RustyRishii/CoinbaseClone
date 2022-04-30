@@ -10,13 +10,13 @@ class earn extends StatefulWidget {
 
 class _earnState extends State<earn> {
 
-  var CryptoTextStyle3 = TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold);
+  var CryptoTextStyle3 = const TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold);
   //CryptoTextStyle3 for crypto coins Text in the gridview section
 
-  var CryptoPercTextStyle = TextStyle(color: Color.fromRGBO(145, 149, 161, 1), fontSize: 35);
+  var CryptoPercTextStyle = const TextStyle(color: Color.fromRGBO(145, 149, 161, 1), fontSize: 35);
   //CryptoPercTextStyle for the Percentage of the returns on the crypto coins in the grid view
 
-  var APYTextSyle = TextStyle(color: Color.fromRGBO(145, 149, 161, 1), fontSize: 20);
+  var APYTextSyle = const TextStyle(color: Color.fromRGBO(145, 149, 161, 1), fontSize: 20);
   //APYTextStyle for the APY Text on the crypto coins in the gridview
 
   @override
@@ -79,21 +79,21 @@ class _earnState extends State<earn> {
                               'https://cryptologos.cc/logos/cosmos-atom-logo.png?v=022'),
                         ),
                          Padding(
-                          padding: EdgeInsets.fromLTRB(10, 60, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(10, 60, 0, 0),
                           child: Text(
                             "Cosmos",
                             style: CryptoTextStyle3,
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(10, 95, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(10, 95, 0, 0),
                           child: Text(
                             "5.00%",
                             style: CryptoPercTextStyle,
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(110, 105, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(110, 105, 0, 0),
                           child: Text(
                             "APY",
                             style: APYTextSyle,
@@ -115,21 +115,21 @@ class _earnState extends State<earn> {
                               'https://cryptologos.cc/logos/tezos-xtz-logo.png?v=022'),
                         ),
                          Padding(
-                          padding: EdgeInsets.fromLTRB(10, 60, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(10, 60, 0, 0),
                           child: Text(
                             "Tezos",
                             style: CryptoTextStyle3,
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(10, 95, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(10, 95, 0, 0),
                           child: Text(
                             "4.63%",
                             style: CryptoPercTextStyle,
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(110, 105, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(110, 105, 0, 0),
                           child: Text(
                             "APY",
                             style: APYTextSyle,
@@ -151,21 +151,21 @@ class _earnState extends State<earn> {
                               'https://cryptologos.cc/logos/cardano-ada-logo.png?v=022'),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(10, 60, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(10, 60, 0, 0),
                           child: Text(
                             "Cardano",
                             style: CryptoTextStyle3,
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(10, 95, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(10, 95, 0, 0),
                           child: Text(
                             "3.75%",
                             style: CryptoPercTextStyle
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(110, 105, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(110, 105, 0, 0),
                           child: Text(
                             "APY",
                             style: APYTextSyle,
@@ -187,21 +187,21 @@ class _earnState extends State<earn> {
                               'https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022'),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(10, 60, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(10, 60, 0, 0),
                           child: Text(
                             "Ethereum 2",
                             style: CryptoTextStyle3,
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(10, 95, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(10, 95, 0, 0),
                           child: Text(
                             "3.68%",
                             style: CryptoPercTextStyle,
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(110, 105, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(110, 105, 0, 0),
                           child: Text(
                             "APY",
                             style: APYTextSyle,
@@ -223,21 +223,21 @@ class _earnState extends State<earn> {
                               'https://cryptologos.cc/logos/multi-collateral-dai-dai-logo.png?v=022'),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(10, 60, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(10, 60, 0, 0),
                           child: Text(
                             "Dai",
                             style: CryptoTextStyle3,
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(10, 95, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(10, 95, 0, 0),
                           child: Text(
                             "2.76%",
                             style: CryptoPercTextStyle,
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(110, 105, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(110, 105, 0, 0),
                           child: Text(
                             "APY",
                             style: APYTextSyle,
@@ -259,21 +259,21 @@ class _earnState extends State<earn> {
                               'https://cryptologos.cc/logos/tether-usdt-logo.png?v=022'),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(10, 60, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(10, 60, 0, 0),
                           child: Text(
                             "Tether",
                             style: CryptoTextStyle3,
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(10, 95, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(10, 95, 0, 0),
                           child: Text(
                             "1.77%",
                             style: CryptoPercTextStyle,
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(110, 105, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(110, 105, 0, 0),
                           child: Text(
                             "APY",
                             style: APYTextSyle,

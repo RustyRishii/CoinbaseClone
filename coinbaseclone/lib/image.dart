@@ -11,7 +11,7 @@ class image extends StatelessWidget {
       ),
       body: Center(
         child: Image.network('https://encrypted-tbn0.gstatic.'
-            'com/images?q=tbn:ANd9GcR-UMA7UwvVFmMIE7fMY2_Z3sep5UBMpmnroQ&usqp=CAU'),
+            'com/images?q=tbn:ANd9GcR-UMA7UwvVFmMIE7fMY2_Z3sep5UBMpmnroQ&usqp=CAU',fit:BoxFit.fill),
       ),
       backgroundColor: Colors.black,
     );

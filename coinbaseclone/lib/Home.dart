@@ -11,10 +11,10 @@ class home extends StatefulWidget {
 
 class _homeState extends State<home> {
 
-  //TextStyle1 is for the Buy,sell,send,receive,convert TEXTS
+  //TextStyle1 for the Buy,sell,send,receive,convert TEXTS
   var TextStyle1 = const TextStyle(color: Colors.black, fontSize: 30, fontWeight: FontWeight.bold);
 
-  //TextStyle1 is for the Buy,sell,send,receive,convert BUTTONS
+  //TextStyle1 for the Buy,sell,send,receive,convert BUTTONS
   var TextSyle2 = const TextStyle(color: Colors.white, fontSize: 15);
 
   @override
@@ -126,7 +126,7 @@ class _homeState extends State<home> {
                   CircleAvatar(
                       backgroundColor: const Color.fromRGBO(55, 115, 245, 1),
                       child: Text(
-                        "↓",
+                        "↹",
                         style: TextStyle1,
                       )), //↹
                 ],
