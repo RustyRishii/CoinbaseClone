@@ -10,9 +10,9 @@ class home extends StatefulWidget {
 }
 
 class _homeState extends State<home> {
-
   //TextStyle1 for the Buy,sell,send,receive,convert TEXTS
-  var TextStyle1 = const TextStyle(color: Colors.black, fontSize: 30, fontWeight: FontWeight.bold);
+  var TextStyle1 = const TextStyle(
+      color: Colors.black, fontSize: 30, fontWeight: FontWeight.bold);
 
   //TextStyle1 for the Buy,sell,send,receive,convert BUTTONS
   var TextSyle2 = const TextStyle(color: Colors.white, fontSize: 15);
@@ -177,20 +177,333 @@ class _homeState extends State<home> {
               ),
             ),
             //Buy,sell,send,receive,convert TEXTS
-            const Divider(height: 35, color: Colors.grey),
+            const Divider(height: 45, color: Colors.grey),
             Row(
               children: const <Widget>[
                 Padding(
-                  padding: EdgeInsets.fromLTRB(22, 0, 0, 0),
+                  padding: EdgeInsets.fromLTRB(22, 0, 0, 10),
                   child: Text(
                     "Watchlist",
                     style: TextStyle(
-                        color: Colors.white, fontWeight: FontWeight.bold, fontSize: 25),
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25),
                   ),
                 )
               ],
-            )
-
+            ), //Watch list Row
+            Row(
+              //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                  child: CircleAvatar(
+                      radius: 12,
+                      child: Image.network(
+                          "https://bitcoin.org/img/icons/opengraph.png?1648897668")),
+                ),
+                Column(
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                      child: Text(
+                        "Bitcoin",
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(10, 0, 20.5, 0),
+                      child: Text(
+                        'BTC',
+                        style: TextStyle(fontSize: 17, color: Colors.grey),
+                      ),
+                    )
+                  ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(140, 0, 0, 0),
+                  child: Column(
+                    children: <Widget>[
+                      Text("₹ 2,963,413.77",
+                          style: TextStyle(color: Colors.white, fontSize: 20)),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(50, 0, 0, 0),
+                        child: Text("₹ -1.93%",
+                            style: TextStyle(color: Colors.red, fontSize: 20)),
+                      ),
+                    ],
+                  ),
+                ), //Column
+              ],
+            ), //Bitcoin
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
+              child: Row(
+                //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                    child: CircleAvatar(
+                        backgroundColor: Colors.lightBlueAccent,
+                        radius: 12,
+                        child: Image.network(
+                            "https://ethereum.org/static/6b935ac0e6194247347855dc3d328e83/13c43/eth-diamond-black.png")),
+                  ),
+                  Column(
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                        child: Text(
+                          "Ethereum",
+                          style: TextStyle(fontSize: 20, color: Colors.white),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0, 0, 32, 0),
+                        child: Text(
+                          'ETH',
+                          style: TextStyle(fontSize: 17, color: Colors.grey),
+                        ),
+                      )
+                    ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(130, 0, 0, 0),
+                    child: Column(
+                      children: <Widget>[
+                        Text("₹ 217,779.03",
+                            style:
+                                TextStyle(color: Colors.white, fontSize: 20)),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(35, 0, 0, 0),
+                          child: Text("₹ -2.83%",
+                              style:
+                                  TextStyle(color: Colors.red, fontSize: 20)),
+                        ),
+                      ],
+                    ),
+                  ), //Column
+                ],
+              ),
+            ), //Ethereum
+            const Divider(height: 45, color: Colors.grey), //Divider
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20, 0, 0, 15),
+              child: Row(
+                children: [
+                  Text(
+                    "Top movers",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25),
+                  ),
+                ],
+              ),
+            ), //Row Top movers
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[900],
+                          borderRadius: BorderRadius.all(Radius.circular(10))),
+                      width: 130,
+                      height: 130,
+                      //color: Colors.grey,
+                      child: Column(
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(0, 10, 60, 0),
+                            child: CircleAvatar(
+                                radius: 20,
+                                child: Image.network(
+                                    "https://upload.wikimedia.org/wikipedia/en/b/b9/Solana_logo.png")),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget> [
+                              Padding(
+                                padding: const EdgeInsets.fromLTRB(10, 5, 0, 0),
+                                child: Text("SOL", style: TextStyle(color: Colors.white, fontSize: 20),),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                child: Text("₹ 7000", style: TextStyle(color: Colors.grey, fontSize: 20),),
+                              )
+                            ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(right: 25),
+                            child: Text("-3.2%", style: TextStyle(color: Colors.red, fontSize: 30),),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ), //Solana
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.grey[900],
+                          borderRadius: BorderRadius.all(Radius.circular(10))),
+                      width: 130,
+                      height: 130,
+                      //color: Colors.grey,
+                      child: Column(
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(0, 10, 60, 0),
+                            child: CircleAvatar(
+                                radius: 20,
+                                child: Image.network(
+                                    "https://ethereum.org/static/6b935ac0e6194247347855dc3d328e83/13c43/eth-diamond-black.png")),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget> [
+                              Padding(
+                                padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                child: Text("ETH", style: TextStyle(color: Colors.white, fontSize: 20),),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                child: Text("₹ 2,00,000", style: TextStyle(color: Colors.grey, fontSize: 20),),
+                              )
+                            ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(right: 25),
+                            child: Text("-12.2%", style: TextStyle(color: Colors.red, fontSize: 30),),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ), //Ethereum
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.grey[900],
+                          borderRadius: BorderRadius.all(Radius.circular(10))),
+                      width: 130,
+                      height: 130,
+                      //color: Colors.grey,
+                      child: Column(
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(0, 10, 60, 0),
+                            child: CircleAvatar(
+                                radius: 20,
+                                child: Image.network(
+                                    "https://bitcoin.org/img/icons/opengraph.png?1648897668")),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget> [
+                              Padding(
+                                padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                child: Text("BTC", style: TextStyle(color: Colors.white, fontSize: 20),),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                child: Text("₹ 300000", style: TextStyle(color: Colors.grey, fontSize: 20),),
+                              )
+                            ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(right: 25),
+                            child: Text("-40.2%", style: TextStyle(color: Colors.red, fontSize: 30),),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ), //Bitcoin
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.grey[900],
+                          borderRadius: BorderRadius.all(Radius.circular(10))),
+                      width: 130,
+                      height: 130,
+                      //color: Colors.grey,
+                      child: Column(
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(0, 10, 60, 0),
+                            child: CircleAvatar(
+                                radius: 20,
+                                child: Image.network(
+                                    "https://cdn.iconscout.com/icon/premium/png-256-thumb/cardano-4441326-3679756.png")),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget> [
+                              Padding(
+                                padding: const EdgeInsets.fromLTRB(10, 5, 0, 0),
+                                child: Text("ADA", style: TextStyle(color: Colors.white, fontSize: 20),),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                child: Text("₹ 15,000", style: TextStyle(color: Colors.grey, fontSize: 20),),
+                              )
+                            ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(right: 25),
+                            child: Text("-1.2%", style: TextStyle(color: Colors.red, fontSize: 30),),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ), //Cardano
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.grey[900],
+                          borderRadius: BorderRadius.all(Radius.circular(10))),
+                      width: 130,
+                      height: 130,
+                      //color: Colors.grey,
+                      child: Column(
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(0, 10, 60, 0),
+                            child: CircleAvatar(
+                                radius: 20,
+                                child: Image.network(
+                                    "https://upload.wikimedia.org/wikipedia/en/b/b9/Solana_logo.png")),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget> [
+                              Padding(
+                                padding: const EdgeInsets.fromLTRB(10, 5, 0, 0),
+                                child: Text("SOL", style: TextStyle(color: Colors.white, fontSize: 20),),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                child: Text("₹ 7000", style: TextStyle(color: Colors.grey, fontSize: 20),),
+                              )
+                            ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(right: 25),
+                            child: Text("-3.2%", style: TextStyle(color: Colors.red, fontSize: 30),),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ), //Solana
+                ],
+              ),
+            ),
+            const Divider(height: 45, color: Colors.grey),
           ],
         ),
       ), //draw is a stful widget in main.dart
@@ -198,4 +511,3 @@ class _homeState extends State<home> {
     );
   }
 }
-
