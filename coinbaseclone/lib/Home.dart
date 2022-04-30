@@ -176,11 +176,12 @@ class _homeState extends State<home> {
                 ],
               ),
             ),
+            //Buy,sell,send,receive,convert TEXTS
             const Divider(height: 35, color: Colors.grey),
             Row(
-              children: <Widget>[
+              children: const <Widget>[
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(22, 0, 0, 0),
+                  padding: EdgeInsets.fromLTRB(22, 0, 0, 0),
                   child: Text(
                     "Watchlist",
                     style: TextStyle(
@@ -189,7 +190,7 @@ class _homeState extends State<home> {
                 )
               ],
             )
-            //Buy,sell,send,receive,convert TEXTS
+
           ],
         ),
       ), //draw is a stful widget in main.dart

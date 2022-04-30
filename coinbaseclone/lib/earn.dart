@@ -9,6 +9,16 @@ class earn extends StatefulWidget {
 }
 
 class _earnState extends State<earn> {
+
+  var CryptoTextStyle3 = TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold);
+  //CryptoTextStyle3 for crypto coins Text in the gridview section
+
+  var CryptoPercTextStyle = TextStyle(color: Color.fromRGBO(145, 149, 161, 1), fontSize: 35);
+  //CryptoPercTextStyle for the Percentage of the returns on the crypto coins in the grid view
+
+  var APYTextSyle = TextStyle(color: Color.fromRGBO(145, 149, 161, 1), fontSize: 20);
+  //APYTextStyle for the APY Text on the crypto coins in the gridview
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +43,7 @@ class _earnState extends State<earn> {
             padding: EdgeInsets.fromLTRB(20, 2, 0, 0),
             child: Text(
               'You can earn passive yield over time when you hold certain assets on Coinbase.'
-                  ' Get started by buying or depositing a yield-earning asset today.',
+              ' Get started by buying or depositing a yield-earning asset today.',
               style: TextStyle(color: Colors.grey, fontSize: 19),
             ),
           ),
@@ -68,29 +78,26 @@ class _earnState extends State<earn> {
                           child: Image.network(
                               'https://cryptologos.cc/logos/cosmos-atom-logo.png?v=022'),
                         ),
-                        const Padding(
+                         Padding(
                           padding: EdgeInsets.fromLTRB(10, 60, 0, 0),
                           child: Text(
                             "Cosmos",
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
+                            style: CryptoTextStyle3,
                           ),
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.fromLTRB(10, 95, 0, 0),
                           child: Text(
                             "5.00%",
-                            style: TextStyle(
-                                color: Color.fromRGBO(145, 149, 161, 1),
-                                fontSize: 35),
+                            style: CryptoPercTextStyle,
                           ),
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.fromLTRB(110, 105, 0, 0),
-                          child: Text("APY", style: TextStyle(
-                              color: Color.fromRGBO(145, 149, 161, 1), fontSize: 20),),
+                          child: Text(
+                            "APY",
+                            style: APYTextSyle,
+                          ),
                         ) // Cosmos padding left
                       ],
                     ),
@@ -107,29 +114,26 @@ class _earnState extends State<earn> {
                           child: Image.network(
                               'https://cryptologos.cc/logos/tezos-xtz-logo.png?v=022'),
                         ),
-                        const Padding(
+                         Padding(
                           padding: EdgeInsets.fromLTRB(10, 60, 0, 0),
                           child: Text(
                             "Tezos",
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
+                            style: CryptoTextStyle3,
                           ),
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.fromLTRB(10, 95, 0, 0),
                           child: Text(
                             "4.63%",
-                            style: TextStyle(
-                                color: Color.fromRGBO(145, 149, 161, 1),
-                                fontSize: 35),
+                            style: CryptoPercTextStyle,
                           ),
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.fromLTRB(110, 105, 0, 0),
-                          child: Text("APY", style: TextStyle(
-                              color: Color.fromRGBO(145, 149, 161, 1), fontSize: 20),),
+                          child: Text(
+                            "APY",
+                            style: APYTextSyle,
+                          ),
                         ) // Cosmos padding left
                       ],
                     ),
@@ -146,29 +150,26 @@ class _earnState extends State<earn> {
                           child: Image.network(
                               'https://cryptologos.cc/logos/cardano-ada-logo.png?v=022'),
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.fromLTRB(10, 60, 0, 0),
                           child: Text(
                             "Cardano",
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
+                            style: CryptoTextStyle3,
                           ),
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.fromLTRB(10, 95, 0, 0),
                           child: Text(
                             "3.75%",
-                            style: TextStyle(
-                                color: Color.fromRGBO(145, 149, 161, 1),
-                                fontSize: 35),
+                            style: CryptoPercTextStyle
                           ),
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.fromLTRB(110, 105, 0, 0),
-                          child: Text("APY", style: TextStyle(
-                              color: Color.fromRGBO(145, 149, 161, 1), fontSize: 20),),
+                          child: Text(
+                            "APY",
+                            style: APYTextSyle,
+                          ),
                         ) // Cosmos padding left
                       ],
                     ),
@@ -185,29 +186,26 @@ class _earnState extends State<earn> {
                           child: Image.network(
                               'https://cryptologos.cc/logos/ethereum-eth-logo.png?v=022'),
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.fromLTRB(10, 60, 0, 0),
                           child: Text(
                             "Ethereum 2",
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
+                            style: CryptoTextStyle3,
                           ),
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.fromLTRB(10, 95, 0, 0),
                           child: Text(
                             "3.68%",
-                            style: TextStyle(
-                                color: Color.fromRGBO(145, 149, 161, 1),
-                                fontSize: 35),
+                            style: CryptoPercTextStyle,
                           ),
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.fromLTRB(110, 105, 0, 0),
-                          child: Text("APY", style: TextStyle(
-                              color: Color.fromRGBO(145, 149, 161, 1), fontSize: 20),),
+                          child: Text(
+                            "APY",
+                            style: APYTextSyle,
+                          ),
                         ) // Cosmos padding left
                       ],
                     ),
@@ -224,29 +222,26 @@ class _earnState extends State<earn> {
                           child: Image.network(
                               'https://cryptologos.cc/logos/multi-collateral-dai-dai-logo.png?v=022'),
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.fromLTRB(10, 60, 0, 0),
                           child: Text(
                             "Dai",
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
+                            style: CryptoTextStyle3,
                           ),
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.fromLTRB(10, 95, 0, 0),
                           child: Text(
                             "2.76%",
-                            style: TextStyle(
-                                color: Color.fromRGBO(145, 149, 161, 1),
-                                fontSize: 35),
+                            style: CryptoPercTextStyle,
                           ),
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.fromLTRB(110, 105, 0, 0),
-                          child: Text("APY", style: TextStyle(
-                              color: Color.fromRGBO(145, 149, 161, 1), fontSize: 20),),
+                          child: Text(
+                            "APY",
+                            style: APYTextSyle,
+                          ),
                         ) // Cosmos padding left
                       ],
                     ),
@@ -263,29 +258,26 @@ class _earnState extends State<earn> {
                           child: Image.network(
                               'https://cryptologos.cc/logos/tether-usdt-logo.png?v=022'),
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.fromLTRB(10, 60, 0, 0),
                           child: Text(
                             "Tether",
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
+                            style: CryptoTextStyle3,
                           ),
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.fromLTRB(10, 95, 0, 0),
                           child: Text(
                             "1.77%",
-                            style: TextStyle(
-                                color: Color.fromRGBO(145, 149, 161, 1),
-                                fontSize: 35),
+                            style: CryptoPercTextStyle,
                           ),
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.fromLTRB(110, 105, 0, 0),
-                          child: Text("APY", style: TextStyle(
-                              color: Color.fromRGBO(145, 149, 161, 1), fontSize: 20),),
+                          child: Text(
+                            "APY",
+                            style: APYTextSyle,
+                          ),
                         ) // Cosmos padding left
                       ],
                     ),
