@@ -10,9 +10,9 @@ class home extends StatefulWidget {
 }
 
 class _homeState extends State<home> {
+
   //TextStyle1 for the Buy,sell,send,receive,convert TEXTS
-  var TextStyle1 = const TextStyle(
-      color: Colors.black, fontSize: 30, fontWeight: FontWeight.bold);
+  var TextStyle1 = const TextStyle(color: Colors.black, fontSize: 30, fontWeight: FontWeight.bold);
 
   //TextStyle1 for the Buy,sell,send,receive,convert BUTTONS
   var TextSyle2 = const TextStyle(color: Colors.white, fontSize: 15);
@@ -51,8 +51,8 @@ class _homeState extends State<home> {
         child: Column(
           children: <Widget>[
             Image.network(
-                'https://techcrunch.com/wp-content/uploads/2021/12/GettyImages-1237717426.jpg'),
-            //Image
+                'https://techcrunch.com/wp-content/uploads/2021/12/GettyImages-1237717426.jpg'), //Image
+
             const Padding(
               padding: EdgeInsets.only(top: 10),
               child: Text(
@@ -62,18 +62,18 @@ class _homeState extends State<home> {
                     fontWeight: FontWeight.bold,
                     fontSize: 25),
               ),
-            ),
-            //welcome to coinbase
-            const SizedBox(height: 5),
-            //SizedBox
+            ), //welcome to coinbase
+
+            const SizedBox(height: 5), //SizedBox
+
             const Text(
               "Make your first investment today",
               style: TextStyle(
                   color: Colors.grey,
                   fontWeight: FontWeight.bold,
                   fontSize: 20),
-            ),
-            //make first investment today
+            ), //make first investment today
+
             Padding(
               padding: const EdgeInsets.only(top: 25, bottom: 5),
               child: ButtonTheme(
@@ -92,8 +92,8 @@ class _homeState extends State<home> {
                       borderRadius: BorderRadius.all(Radius.circular(50))),
                 ),
               ),
-            ),
-            //Add payment method
+            ), //Add payment method
+
             Padding(
               padding: const EdgeInsets.only(top: 15),
               child: Row(
@@ -131,8 +131,8 @@ class _homeState extends State<home> {
                       )), //↹
                 ],
               ),
-            ),
-            // Buy,sell,send,receive,convert BUTTONS
+            ), // Buy,sell,send,receive,convert BUTTONS
+
             Padding(
               padding: const EdgeInsets.only(top: 5),
               child: Row(
@@ -175,9 +175,10 @@ class _homeState extends State<home> {
                   ), //Receive
                 ],
               ),
-            ),
-            //Buy,sell,send,receive,convert TEXTS
+            ), //Buy,sell,send,receive,convert TEXTS
+
             const Divider(height: 45, color: Colors.grey),
+
             Row(
               children: const <Widget>[
                 Padding(
@@ -192,6 +193,7 @@ class _homeState extends State<home> {
                 )
               ],
             ), //Watch list Row
+
             Row(
               //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
@@ -236,6 +238,7 @@ class _homeState extends State<home> {
                 ), //Column
               ],
             ), //Bitcoin
+
             Padding(
               padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
               child: Row(
@@ -286,7 +289,9 @@ class _homeState extends State<home> {
                 ],
               ),
             ), //Ethereum
+
             const Divider(height: 45, color: Colors.grey), //Divider
+
             Padding(
               padding: const EdgeInsets.fromLTRB(20, 0, 0, 15),
               child: Row(
@@ -301,6 +306,7 @@ class _homeState extends State<home> {
                 ],
               ),
             ), //Row Top movers
+
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
@@ -502,7 +508,8 @@ class _homeState extends State<home> {
                   ), //Solana
                 ],
               ),
-            ),
+            ), //Crypto coins row
+
             const Divider(height: 45, color: Colors.grey),
           ],
         ),
