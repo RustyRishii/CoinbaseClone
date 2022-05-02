@@ -1,3 +1,4 @@
+import 'package:coinbaseclone/Trade.dart';
 import 'package:flutter/material.dart';
 import 'package:coinbaseclone/main.dart';
 import 'notifications.dart';
@@ -40,6 +41,93 @@ class _assetsState extends State<assets> {
         ),
       ),
       drawer: draw(),
+      body: Stack(
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.only(left: 15, top: 10),
+            child: Text(
+              "Your balance",
+              style: TextStyle(color: Colors.grey, fontSize: 20),
+            ),
+          ), //Your balance Text
+          Padding(
+            padding: const EdgeInsets.only(left: 25, top: 30),
+            child: Text(
+              "₹0.00",
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold),
+            ),
+          ),
+          Row(
+            children: const <Widget>[
+              Padding(
+                padding: EdgeInsets.fromLTRB(100, 75, 100, 0),
+                child: Icon(
+                  Icons.stars_outlined,
+                  color: Colors.white,
+                  size: 200,
+                ),
+              )
+            ],
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0, 270, 0, 0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  "Get started with crypto",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 21,
+                      fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
+          ), //Get started with crypto Text
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0, 300, 0, 0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  "Your crypto assets will appear here.",
+                  style: TextStyle(color: Colors.white, fontSize: 21),
+                ),
+              ],
+            ),
+          ), //Your assets will appear here
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0,350, 0, 0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ButtonTheme(
+                  minWidth: 350,
+                  height: 50,
+                  child: RaisedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const trade()),
+                      );
+                    },
+                    child: const Text(
+                      "Explore assets",
+                      style: TextStyle(fontSize: 20, color: Colors.white),
+                    ),
+                    color: const Color.fromRGBO(50, 53, 65, 1),
+                    shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(50))),
+                  ),
+                ),
+              ],
+            ),
+          ), //Your crypto assets will appear here. Text
+        ],
+      ),
       backgroundColor: Colors.black,
     );
   }
