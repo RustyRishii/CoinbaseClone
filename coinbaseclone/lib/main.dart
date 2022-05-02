@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:coinbaseclone/Assets.dart';
 import 'package:coinbaseclone/Home.dart';
 import 'package:coinbaseclone/Pay.dart';
-import 'package:coinbaseclone/Trade.dart';
+//import 'package:coinbaseclone/Trade.dart';
 import 'package:coinbaseclone/wallet.dart';
 
 import 'image.dart';
@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
   final List<Widget> children = [
     const home(),
     const assets(),
-    const trade(),
+    //const trade(),
     const pay(),
   ];
 
@@ -57,7 +57,7 @@ class _MyAppState extends State<MyApp> {
           items: const [
             BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: "Home"),
             BottomNavigationBarItem(icon: Icon(Icons.pie_chart), label: "Assets"),
-            BottomNavigationBarItem(icon: Icon(Icons.trending_up), label: "Trade"),
+           // BottomNavigationBarItem(icon: Icon(Icons.trending_up), label: "Trade"),
             BottomNavigationBarItem(icon: Icon(Icons.circle), label: "Pay"),
           ],
         ),
@@ -66,7 +66,6 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
-
 
 class draw extends StatefulWidget {
   const draw({Key? key}) : super(key: key);
@@ -195,9 +194,6 @@ class _drawState extends State<draw> {
     );
   }
 }
-
-
-
 
 /*
 
@@ -437,4 +433,3 @@ class _drawState extends State<MyApp> {
 
 
  */
-

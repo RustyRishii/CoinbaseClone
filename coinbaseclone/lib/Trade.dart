@@ -1,3 +1,5 @@
+/*
+
 import 'package:flutter/material.dart';
 import 'package:coinbaseclone/earn.dart';
 import 'package:coinbaseclone/image.dart';
@@ -44,3 +46,6 @@ class _tradeState extends State<trade> {
     );
   }
 }
+
+
+ */

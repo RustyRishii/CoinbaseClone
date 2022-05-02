@@ -71,7 +71,7 @@ class _assetsState extends State<assets> {
                 ),
               )
             ],
-          ),
+          ), //Icon
           Padding(
             padding: const EdgeInsets.fromLTRB(0, 270, 0, 0),
             child: Row(
@@ -108,12 +108,7 @@ class _assetsState extends State<assets> {
                   minWidth: 350,
                   height: 50,
                   child: RaisedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => const trade()),
-                      );
-                    },
+                    onPressed: () {},
                     child: const Text(
                       "Explore assets",
                       style: TextStyle(fontSize: 20, color: Colors.white),
@@ -125,7 +120,7 @@ class _assetsState extends State<assets> {
                 ),
               ],
             ),
-          ), //Your crypto assets will appear here. Text
+          ), //Explore assets button
         ],
       ),
       backgroundColor: Colors.black,
