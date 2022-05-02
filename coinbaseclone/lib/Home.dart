@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:coinbaseclone/main.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'notifications.dart';
 
 class home extends StatefulWidget {
@@ -10,9 +11,9 @@ class home extends StatefulWidget {
 }
 
 class _homeState extends State<home> {
-
   //TextStyle1 for the Buy,sell,send,receive,convert TEXTS
-  var TextStyle1 = const TextStyle(color: Colors.black, fontSize: 30, fontWeight: FontWeight.bold);
+  var TextStyle1 = const TextStyle(
+      color: Colors.black, fontSize: 30, fontWeight: FontWeight.bold);
 
   //TextStyle1 for the Buy,sell,send,receive,convert BUTTONS
   var TextSyle2 = const TextStyle(color: Colors.white, fontSize: 15);
@@ -41,7 +42,9 @@ class _homeState extends State<home> {
               onPressed: () {
                 Scaffold.of(context).openDrawer();
               },
-              tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+              tooltip: MaterialLocalizations
+                  .of(context)
+                  .openAppDrawerTooltip,
             );
           },
         ),
@@ -51,7 +54,8 @@ class _homeState extends State<home> {
         child: Column(
           children: <Widget>[
             Image.network(
-                'https://techcrunch.com/wp-content/uploads/2021/12/GettyImages-1237717426.jpg'), //Image
+                'https://techcrunch.com/wp-content/uploads/2021/12/GettyImages-1237717426.jpg'),
+            //Image
 
             const Padding(
               padding: EdgeInsets.only(top: 10),
@@ -62,9 +66,11 @@ class _homeState extends State<home> {
                     fontWeight: FontWeight.bold,
                     fontSize: 25),
               ),
-            ), //welcome to coinbase
+            ),
+            //welcome to coinbase
 
-            const SizedBox(height: 5), //SizedBox
+            const SizedBox(height: 5),
+            //SizedBox
 
             const Text(
               "Make your first investment today",
@@ -72,7 +78,8 @@ class _homeState extends State<home> {
                   color: Colors.grey,
                   fontWeight: FontWeight.bold,
                   fontSize: 20),
-            ), //make first investment today
+            ),
+            //make first investment today
 
             Padding(
               padding: const EdgeInsets.only(top: 25, bottom: 5),
@@ -92,7 +99,8 @@ class _homeState extends State<home> {
                       borderRadius: BorderRadius.all(Radius.circular(50))),
                 ),
               ),
-            ), //Add payment method
+            ),
+            //Add payment method
 
             Padding(
               padding: const EdgeInsets.only(top: 15),
@@ -131,7 +139,8 @@ class _homeState extends State<home> {
                       )), //↹
                 ],
               ),
-            ), // Buy,sell,send,receive,convert BUTTONS
+            ),
+            // Buy,sell,send,receive,convert BUTTONS
 
             Padding(
               padding: const EdgeInsets.only(top: 5),
@@ -175,7 +184,8 @@ class _homeState extends State<home> {
                   ), //Receive
                 ],
               ),
-            ), //Buy,sell,send,receive,convert TEXTS
+            ),
+            //Buy,sell,send,receive,convert TEXTS
 
             const Divider(height: 45, color: Colors.grey),
 
@@ -192,7 +202,8 @@ class _homeState extends State<home> {
                   ),
                 )
               ],
-            ), //Watch list Row
+            ),
+            //Watch list Row
 
             Row(
               //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -237,7 +248,8 @@ class _homeState extends State<home> {
                   ),
                 ), //Column
               ],
-            ), //Bitcoin
+            ),
+            //Bitcoin
 
             Padding(
               padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
@@ -276,21 +288,23 @@ class _homeState extends State<home> {
                       children: <Widget>[
                         Text("₹ 217,779.03",
                             style:
-                                TextStyle(color: Colors.white, fontSize: 20)),
+                            TextStyle(color: Colors.white, fontSize: 20)),
                         Padding(
                           padding: const EdgeInsets.fromLTRB(35, 0, 0, 0),
                           child: Text("₹ -2.83%",
                               style:
-                                  TextStyle(color: Colors.red, fontSize: 20)),
+                              TextStyle(color: Colors.red, fontSize: 20)),
                         ),
                       ],
                     ),
                   ), //Column
                 ],
               ),
-            ), //Ethereum
+            ),
+            //Ethereum
 
-            const Divider(height: 45, color: Colors.grey), //Divider
+            const Divider(height: 45, color: Colors.grey),
+            //Divider
 
             Padding(
               padding: const EdgeInsets.fromLTRB(20, 0, 0, 15),
@@ -305,7 +319,8 @@ class _homeState extends State<home> {
                   ),
                 ],
               ),
-            ), //Row Top movers
+            ),
+            //Row Top movers
 
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
@@ -315,7 +330,7 @@ class _homeState extends State<home> {
                     padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.grey[900],
+                          color: Colors.grey[900],
                           borderRadius: BorderRadius.all(Radius.circular(10))),
                       width: 130,
                       height: 130,
@@ -331,20 +346,31 @@ class _homeState extends State<home> {
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: <Widget> [
+                            children: <Widget>[
                               Padding(
                                 padding: const EdgeInsets.fromLTRB(10, 5, 0, 0),
-                                child: Text("SOL", style: TextStyle(color: Colors.white, fontSize: 20),),
+                                child: Text(
+                                  "SOL",
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 20),
+                                ),
                               ),
                               Padding(
                                 padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
-                                child: Text("₹ 7000", style: TextStyle(color: Colors.grey, fontSize: 20),),
+                                child: Text(
+                                  "₹ 7000",
+                                  style: TextStyle(
+                                      color: Colors.grey, fontSize: 20),
+                                ),
                               )
                             ],
                           ),
                           Padding(
                             padding: const EdgeInsets.only(right: 25),
-                            child: Text("-3.2%", style: TextStyle(color: Colors.red, fontSize: 30),),
+                            child: Text(
+                              "-3.2%",
+                              style: TextStyle(color: Colors.red, fontSize: 30),
+                            ),
                           ),
                         ],
                       ),
@@ -370,20 +396,31 @@ class _homeState extends State<home> {
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: <Widget> [
+                            children: <Widget>[
                               Padding(
                                 padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
-                                child: Text("ETH", style: TextStyle(color: Colors.white, fontSize: 20),),
+                                child: Text(
+                                  "ETH",
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 20),
+                                ),
                               ),
                               Padding(
                                 padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
-                                child: Text("₹ 2,00,000", style: TextStyle(color: Colors.grey, fontSize: 20),),
+                                child: Text(
+                                  "₹ 2,00,000",
+                                  style: TextStyle(
+                                      color: Colors.grey, fontSize: 20),
+                                ),
                               )
                             ],
                           ),
                           Padding(
                             padding: const EdgeInsets.only(right: 25),
-                            child: Text("-12.2%", style: TextStyle(color: Colors.red, fontSize: 30),),
+                            child: Text(
+                              "-12.2%",
+                              style: TextStyle(color: Colors.red, fontSize: 30),
+                            ),
                           ),
                         ],
                       ),
@@ -409,20 +446,31 @@ class _homeState extends State<home> {
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: <Widget> [
+                            children: <Widget>[
                               Padding(
                                 padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
-                                child: Text("BTC", style: TextStyle(color: Colors.white, fontSize: 20),),
+                                child: Text(
+                                  "BTC",
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 20),
+                                ),
                               ),
                               Padding(
                                 padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
-                                child: Text("₹ 300000", style: TextStyle(color: Colors.grey, fontSize: 20),),
+                                child: Text(
+                                  "₹ 300000",
+                                  style: TextStyle(
+                                      color: Colors.grey, fontSize: 20),
+                                ),
                               )
                             ],
                           ),
                           Padding(
                             padding: const EdgeInsets.only(right: 25),
-                            child: Text("-40.2%", style: TextStyle(color: Colors.red, fontSize: 30),),
+                            child: Text(
+                              "-40.2%",
+                              style: TextStyle(color: Colors.red, fontSize: 30),
+                            ),
                           ),
                         ],
                       ),
@@ -448,20 +496,31 @@ class _homeState extends State<home> {
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: <Widget> [
+                            children: <Widget>[
                               Padding(
                                 padding: const EdgeInsets.fromLTRB(10, 5, 0, 0),
-                                child: Text("ADA", style: TextStyle(color: Colors.white, fontSize: 20),),
+                                child: Text(
+                                  "ADA",
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 20),
+                                ),
                               ),
                               Padding(
                                 padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
-                                child: Text("₹ 15,000", style: TextStyle(color: Colors.grey, fontSize: 20),),
+                                child: Text(
+                                  "₹ 15,000",
+                                  style: TextStyle(
+                                      color: Colors.grey, fontSize: 20),
+                                ),
                               )
                             ],
                           ),
                           Padding(
                             padding: const EdgeInsets.only(right: 25),
-                            child: Text("-1.2%", style: TextStyle(color: Colors.red, fontSize: 30),),
+                            child: Text(
+                              "-1.2%",
+                              style: TextStyle(color: Colors.red, fontSize: 30),
+                            ),
                           ),
                         ],
                       ),
@@ -487,20 +546,31 @@ class _homeState extends State<home> {
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: <Widget> [
+                            children: <Widget>[
                               Padding(
                                 padding: const EdgeInsets.fromLTRB(10, 5, 0, 0),
-                                child: Text("SOL", style: TextStyle(color: Colors.white, fontSize: 20),),
+                                child: Text(
+                                  "SOL",
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 20),
+                                ),
                               ),
                               Padding(
                                 padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
-                                child: Text("₹ 7000", style: TextStyle(color: Colors.grey, fontSize: 20),),
+                                child: Text(
+                                  "₹ 7000",
+                                  style: TextStyle(
+                                      color: Colors.grey, fontSize: 20),
+                                ),
                               )
                             ],
                           ),
                           Padding(
                             padding: const EdgeInsets.only(right: 25),
-                            child: Text("-3.2%", style: TextStyle(color: Colors.red, fontSize: 30),),
+                            child: Text(
+                              "-3.2%",
+                              style: TextStyle(color: Colors.red, fontSize: 30),
+                            ),
                           ),
                         ],
                       ),
@@ -508,9 +578,76 @@ class _homeState extends State<home> {
                   ), //Solana
                 ],
               ),
-            ), //Crypto coins row
+            ),
+            //Crypto coins row
 
             const Divider(height: 45, color: Colors.grey),
+
+            GestureDetector(
+              onTap: () {
+                launch(
+                    'https://decrypt.co/98829/apecoin-becomes-largest-metaverse-token-surpassing-mana-sand-axs');
+              },
+              child: Stack(
+                children: <Widget>[
+                  Image.network(
+                      'https://image.coinpedia.org/wp-content/uploads/2022/03/18181758/apecoin.png'),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 230, left: 9),
+                    child: Text(
+                      "ApeCoin Becomes Largest metaverse Token, surpassing MANA, SAND,AXS",
+                      style: TextStyle(color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 290, left: 9),
+                    child: Text(
+                      "Among top 100 coins, secret also gained on news of its upcoming privacy- focused productivity suite.",
+                      style: TextStyle(color: Colors.white,
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+            Divider(height: 30, color: Colors.grey,),
+
+            GestureDetector(
+              onTap: () {
+                launch(
+                    'https://www.bloomberg.com/news/articles/2022-04-29/bitcoin-bond-sale-flop-deepens-debt-market-rout-in-el-salvador');
+              },
+              child: Stack(
+                children: <Widget>[
+                  Image.network(
+                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOMacHQg1TsL0rLXsCUa6XA772SepITQXKWw&usqp=CAU'),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 230, left: 9),
+                    child: Text(
+                      "Bitcoin Rollout in El Salvador Looks like a Bust, Survey Finds",
+                      style: TextStyle(color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 290, left: 9),
+                    child: Text(
+                      "Bitcoin is struggling to gain traction in El Salvador --"
+                          "  the first cuntry to accept it as legal tender -- after many..",
+                      style: TextStyle(color: Colors.white,
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            //Image.network("https://image.coinpedia.org/wp-content/uploads/2022/03/18181758/apecoin.png"),
           ],
         ),
       ), //draw is a stful widget in main.dart
