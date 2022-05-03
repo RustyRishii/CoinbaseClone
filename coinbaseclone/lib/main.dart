@@ -38,6 +38,7 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: children[CurrentInt],
@@ -76,7 +77,7 @@ class draw extends StatefulWidget {
 
 class _drawState extends State<draw> {
 
-  var DrawButtonTextStyle = TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white);
+  var DrawButtonTextStyle = const TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white);
 
   @override
   Widget build(BuildContext context) {

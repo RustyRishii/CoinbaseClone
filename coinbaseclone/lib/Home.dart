@@ -216,16 +216,16 @@ class _homeState extends State<home> {
                           "https://bitcoin.org/img/icons/opengraph.png?1648897668")),
                 ),
                 Column(
-                  children: <Widget>[
+                  children: const <Widget>[
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                      padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
                       child: Text(
                         "Bitcoin",
                         style: TextStyle(fontSize: 20, color: Colors.white),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(10, 0, 20.5, 0),
+                      padding: EdgeInsets.fromLTRB(10, 0, 20.5, 0),
                       child: Text(
                         'BTC',
                         style: TextStyle(fontSize: 17, color: Colors.grey),
@@ -236,11 +236,11 @@ class _homeState extends State<home> {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(140, 0, 0, 0),
                   child: Column(
-                    children: <Widget>[
+                    children: const <Widget>[
                       Text("₹ 2,963,413.77",
                           style: TextStyle(color: Colors.white, fontSize: 20)),
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(50, 0, 0, 0),
+                        padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
                         child: Text("₹ -1.93%",
                             style: TextStyle(color: Colors.red, fontSize: 20)),
                       ),
@@ -265,16 +265,16 @@ class _homeState extends State<home> {
                             "https://ethereum.org/static/6b935ac0e6194247347855dc3d328e83/13c43/eth-diamond-black.png")),
                   ),
                   Column(
-                    children: <Widget>[
+                    children: const <Widget>[
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                        padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
                         child: Text(
                           "Ethereum",
                           style: TextStyle(fontSize: 20, color: Colors.white),
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 0, 32, 0),
+                        padding: EdgeInsets.fromLTRB(0, 0, 32, 0),
                         child: Text(
                           'ETH',
                           style: TextStyle(fontSize: 17, color: Colors.grey),
@@ -285,12 +285,12 @@ class _homeState extends State<home> {
                   Padding(
                     padding: const EdgeInsets.fromLTRB(130, 0, 0, 0),
                     child: Column(
-                      children: <Widget>[
+                      children: const <Widget>[
                         Text("₹ 217,779.03",
                             style:
                             TextStyle(color: Colors.white, fontSize: 20)),
                         Padding(
-                          padding: const EdgeInsets.fromLTRB(35, 0, 0, 0),
+                          padding: EdgeInsets.fromLTRB(35, 0, 0, 0),
                           child: Text("₹ -2.83%",
                               style:
                               TextStyle(color: Colors.red, fontSize: 20)),
@@ -309,7 +309,7 @@ class _homeState extends State<home> {
             Padding(
               padding: const EdgeInsets.fromLTRB(20, 0, 0, 15),
               child: Row(
-                children: [
+                children: const [
                   Text(
                     "Top movers",
                     style: TextStyle(
@@ -331,7 +331,7 @@ class _homeState extends State<home> {
                     child: Container(
                       decoration: BoxDecoration(
                           color: Colors.grey[900],
-                          borderRadius: BorderRadius.all(Radius.circular(10))),
+                          borderRadius: const BorderRadius.all(Radius.circular(10))),
                       width: 130,
                       height: 130,
                       //color: Colors.grey,
@@ -346,9 +346,9 @@ class _homeState extends State<home> {
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: <Widget>[
+                            children: const <Widget>[
                               Padding(
-                                padding: const EdgeInsets.fromLTRB(10, 5, 0, 0),
+                                padding: EdgeInsets.fromLTRB(10, 5, 0, 0),
                                 child: Text(
                                   "SOL",
                                   style: TextStyle(
@@ -356,7 +356,7 @@ class _homeState extends State<home> {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
                                 child: Text(
                                   "₹ 7000",
                                   style: TextStyle(
@@ -365,8 +365,8 @@ class _homeState extends State<home> {
                               )
                             ],
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(right: 25),
+                          const Padding(
+                            padding: EdgeInsets.only(right: 25),
                             child: Text(
                               "-3.2%",
                               style: TextStyle(color: Colors.red, fontSize: 30),
@@ -381,7 +381,7 @@ class _homeState extends State<home> {
                     child: Container(
                       decoration: BoxDecoration(
                           color: Colors.grey[900],
-                          borderRadius: BorderRadius.all(Radius.circular(10))),
+                          borderRadius: const BorderRadius.all(Radius.circular(10))),
                       width: 130,
                       height: 130,
                       //color: Colors.grey,
@@ -396,9 +396,9 @@ class _homeState extends State<home> {
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: <Widget>[
+                            children: const <Widget>[
                               Padding(
-                                padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
                                 child: Text(
                                   "ETH",
                                   style: TextStyle(
@@ -406,7 +406,7 @@ class _homeState extends State<home> {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
                                 child: Text(
                                   "₹ 2,00,000",
                                   style: TextStyle(
@@ -415,8 +415,8 @@ class _homeState extends State<home> {
                               )
                             ],
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(right: 25),
+                          const Padding(
+                            padding: EdgeInsets.only(right: 25),
                             child: Text(
                               "-12.2%",
                               style: TextStyle(color: Colors.red, fontSize: 30),
@@ -431,7 +431,7 @@ class _homeState extends State<home> {
                     child: Container(
                       decoration: BoxDecoration(
                           color: Colors.grey[900],
-                          borderRadius: BorderRadius.all(Radius.circular(10))),
+                          borderRadius: const BorderRadius.all(Radius.circular(10))),
                       width: 130,
                       height: 130,
                       //color: Colors.grey,
@@ -446,9 +446,9 @@ class _homeState extends State<home> {
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: <Widget>[
+                            children: const <Widget>[
                               Padding(
-                                padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
                                 child: Text(
                                   "BTC",
                                   style: TextStyle(
@@ -456,7 +456,7 @@ class _homeState extends State<home> {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
                                 child: Text(
                                   "₹ 300000",
                                   style: TextStyle(
@@ -465,8 +465,8 @@ class _homeState extends State<home> {
                               )
                             ],
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(right: 25),
+                          const Padding(
+                            padding: EdgeInsets.only(right: 25),
                             child: Text(
                               "-40.2%",
                               style: TextStyle(color: Colors.red, fontSize: 30),
@@ -481,7 +481,7 @@ class _homeState extends State<home> {
                     child: Container(
                       decoration: BoxDecoration(
                           color: Colors.grey[900],
-                          borderRadius: BorderRadius.all(Radius.circular(10))),
+                          borderRadius: const BorderRadius.all(Radius.circular(10))),
                       width: 130,
                       height: 130,
                       //color: Colors.grey,
@@ -496,9 +496,9 @@ class _homeState extends State<home> {
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: <Widget>[
+                            children: const <Widget>[
                               Padding(
-                                padding: const EdgeInsets.fromLTRB(10, 5, 0, 0),
+                                padding: EdgeInsets.fromLTRB(10, 5, 0, 0),
                                 child: Text(
                                   "ADA",
                                   style: TextStyle(
@@ -506,7 +506,7 @@ class _homeState extends State<home> {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
                                 child: Text(
                                   "₹ 15,000",
                                   style: TextStyle(
@@ -515,8 +515,8 @@ class _homeState extends State<home> {
                               )
                             ],
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(right: 25),
+                          const Padding(
+                            padding: EdgeInsets.only(right: 25),
                             child: Text(
                               "-1.2%",
                               style: TextStyle(color: Colors.red, fontSize: 30),
@@ -531,7 +531,7 @@ class _homeState extends State<home> {
                     child: Container(
                       decoration: BoxDecoration(
                           color: Colors.grey[900],
-                          borderRadius: BorderRadius.all(Radius.circular(10))),
+                          borderRadius: const BorderRadius.all(Radius.circular(10))),
                       width: 130,
                       height: 130,
                       //color: Colors.grey,
@@ -546,9 +546,9 @@ class _homeState extends State<home> {
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: <Widget>[
+                            children: const <Widget>[
                               Padding(
-                                padding: const EdgeInsets.fromLTRB(10, 5, 0, 0),
+                                padding: EdgeInsets.fromLTRB(10, 5, 0, 0),
                                 child: Text(
                                   "SOL",
                                   style: TextStyle(
@@ -556,7 +556,7 @@ class _homeState extends State<home> {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
                                 child: Text(
                                   "₹ 7000",
                                   style: TextStyle(
@@ -565,8 +565,8 @@ class _homeState extends State<home> {
                               )
                             ],
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(right: 25),
+                          const Padding(
+                            padding: EdgeInsets.only(right: 25),
                             child: Text(
                               "-3.2%",
                               style: TextStyle(color: Colors.red, fontSize: 30),
@@ -592,8 +592,8 @@ class _homeState extends State<home> {
                 children: <Widget>[
                   Image.network(
                       'https://image.coinpedia.org/wp-content/uploads/2022/03/18181758/apecoin.png'),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 230, left: 9),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 230, left: 9),
                     child: Text(
                       "ApeCoin Becomes Largest metaverse Token, surpassing MANA, SAND,AXS",
                       style: TextStyle(color: Colors.white,
@@ -601,8 +601,8 @@ class _homeState extends State<home> {
                           fontWeight: FontWeight.bold),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 290, left: 9),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 290, left: 9),
                     child: Text(
                       "Among top 100 coins, secret also gained on news of its upcoming privacy- focused productivity suite.",
                       style: TextStyle(color: Colors.white,
@@ -614,7 +614,7 @@ class _homeState extends State<home> {
               ),
             ),
 
-            Divider(height: 30, color: Colors.grey,),
+            const Divider(height: 30, color: Colors.grey,),
 
             GestureDetector(
               onTap: () {
@@ -625,8 +625,8 @@ class _homeState extends State<home> {
                 children: <Widget>[
                   Image.network(
                       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOMacHQg1TsL0rLXsCUa6XA772SepITQXKWw&usqp=CAU'),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 230, left: 9),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 230, left: 9),
                     child: Text(
                       "Bitcoin Rollout in El Salvador Looks like a Bust, Survey Finds",
                       style: TextStyle(color: Colors.white,
@@ -634,8 +634,8 @@ class _homeState extends State<home> {
                           fontWeight: FontWeight.bold),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 290, left: 9),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 290, left: 9),
                     child: Text(
                       "Bitcoin is struggling to gain traction in El Salvador --"
                           "  the first cuntry to accept it as legal tender -- after many..",

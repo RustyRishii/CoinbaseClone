@@ -50,7 +50,7 @@ class _walletState extends State<wallet> {
                   ),
                 ],
               ), //Trade assets Row
-              Padding(
+              const Padding(
                 padding: EdgeInsets.fromLTRB(67, 77.5, 0, 0),
                 child: Text(
                   "Keep your cypto secure and trade even more assets",
@@ -58,15 +58,15 @@ class _walletState extends State<wallet> {
                 ),
               ), //Context
               Row(
-                children: <Widget>[
-                  const Padding(
+                children: const <Widget>[
+                  Padding(
                     padding: EdgeInsets.fromLTRB(25, 170, 0, 0),
-                    child: const Text(
+                    child: Text(
                       "%",
                       style: TextStyle(fontSize: 22, color: Colors.white),
                     ),
                   ),
-                  const Padding(
+                  Padding(
                     padding: EdgeInsets.fromLTRB(25, 170, 0, 0),
                     child: Text(
                       "Earn interest on your crypto",
@@ -80,22 +80,22 @@ class _walletState extends State<wallet> {
               ), //Earn interest
               const Padding(
                 padding: EdgeInsets.fromLTRB(66, 200, 0, 0),
-                child: const Text(
+                child: Text(
                   "Explore all the ways to earn interest on the crypto you hold",
                   style: TextStyle(color: Colors.grey, fontSize: 19),
                 ),
               ), //Context
 
               Row(
-                children: <Widget>[
-                  const Padding(
+                children: const <Widget>[
+                  Padding(
                     padding: EdgeInsets.fromLTRB(25, 290, 0, 0),
-                    child: const Text(
+                    child: Text(
                       "%",
                       style: TextStyle(fontSize: 22, color: Colors.white),
                     ),
                   ),
-                  const Padding(
+                  Padding(
                     padding: EdgeInsets.fromLTRB(25, 290, 0, 0),
                     child: Text(
                       "Explore decentralized apps",
@@ -109,7 +109,7 @@ class _walletState extends State<wallet> {
               ), //Explore Dapps
               const Padding(
                 padding: EdgeInsets.fromLTRB(66, 320, 0, 0),
-                child: const Text(
+                child: Text(
                   "Check out the world of decentralized finance and all Dapps have to offer.",
                   style: TextStyle(color: Colors.grey, fontSize: 19),
                 ),
@@ -118,7 +118,7 @@ class _walletState extends State<wallet> {
           ),
           const Padding(
             padding: EdgeInsets.only(top: 25),
-            child: const Divider(
+            child: Divider(
               height: 15,
               color: Colors.grey,
             ),

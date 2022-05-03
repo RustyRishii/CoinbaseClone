@@ -1,4 +1,3 @@
-import 'package:coinbaseclone/Trade.dart';
 import 'package:flutter/material.dart';
 import 'package:coinbaseclone/main.dart';
 import 'notifications.dart';
@@ -40,18 +39,18 @@ class _assetsState extends State<assets> {
           },
         ),
       ),
-      drawer: draw(),
+      drawer: const draw(),
       body: Stack(
         children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.only(left: 15, top: 10),
+          const Padding(
+            padding: EdgeInsets.only(left: 15, top: 10),
             child: Text(
               "Your balance",
               style: TextStyle(color: Colors.grey, fontSize: 20),
             ),
           ), //Your balance Text
-          Padding(
-            padding: const EdgeInsets.only(left: 25, top: 30),
+          const Padding(
+            padding: EdgeInsets.only(left: 25, top: 30),
             child: Text(
               "₹0.00",
               style: TextStyle(
@@ -76,8 +75,8 @@ class _assetsState extends State<assets> {
             padding: const EdgeInsets.fromLTRB(0, 270, 0, 0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Text(
+              children: const [
+                Text(
                   "Get started with crypto",
                   style: TextStyle(
                       color: Colors.white,
@@ -91,8 +90,8 @@ class _assetsState extends State<assets> {
             padding: const EdgeInsets.fromLTRB(0, 300, 0, 0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Text(
+              children: const [
+                Text(
                   "Your crypto assets will appear here.",
                   style: TextStyle(color: Colors.white, fontSize: 21),
                 ),

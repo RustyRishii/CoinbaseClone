@@ -176,7 +176,7 @@ class _inviteState extends State<invite> {
                   width: 120,
                   decoration: const BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(15)),
-                      color: const Color.fromRGBO(20, 21, 25, 1)),
+                      color: Color.fromRGBO(20, 21, 25, 1)),
                   child: Column(
                     children: const <Widget>[
                       Padding(
@@ -206,7 +206,7 @@ class _inviteState extends State<invite> {
                   width: 120,
                   decoration: const BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(15)),
-                      color: const Color.fromRGBO(20, 21, 25, 1)),
+                      color: Color.fromRGBO(20, 21, 25, 1)),
                   child: Column(
                     children: const <Widget>[
                       Padding(

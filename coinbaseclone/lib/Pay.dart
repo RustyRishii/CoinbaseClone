@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:coinbaseclone/earn.dart';
-import 'package:coinbaseclone/image.dart';
-import 'package:coinbaseclone/invite.dart';
 import 'package:coinbaseclone/main.dart';
 import 'notifications.dart';
 
@@ -70,11 +67,11 @@ class _payState extends State<pay> {
           ), //Crypto gift and context
           const Padding(
             padding: EdgeInsets.fromLTRB(250, 25, 0, 0),
-            child: const Icon(Icons.card_giftcard, color: Colors.white, size: 150),
+            child: Icon(Icons.card_giftcard, color: Colors.white, size: 150),
           ), //GiftCard icon
           const Padding(
             padding: EdgeInsets.only(top: 555),
-            child: const Divider(
+            child: Divider(
               height: 1000,
               color: Colors.grey,
             ),
