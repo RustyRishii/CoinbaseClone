@@ -98,8 +98,7 @@ class _drawState extends State<draw> {
                   child: const CircleAvatar(
                     radius: 90,
                     backgroundImage: NetworkImage(
-                        'https://encrypted-tbn0.gstatic.'
-                            'com/images?q=tbn:ANd9GcR-UMA7UwvVFmMIE7fMY2_Z3sep5UBMpmnroQ&usqp=CAU'),
+                        'https://pbs.twimg.com/media/FGCpQkBXMAIqA6d.jpg:large'),
                   ),
                 ),
               ),
@@ -107,13 +106,13 @@ class _drawState extends State<draw> {
                 padding: EdgeInsets.only(top: 19),
                 child: Center(
                     child: Text(
-                      "Rusty Nectar",
+                      "Anonymous",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 35,
                           color: Colors.white),
                     )),
-              ), //Name Rusty Nectar
+              ), //Name Anonymous
               Padding(
                 padding: const EdgeInsets.fromLTRB(15, 10, 15, 35),
                 child: ElevatedButton(
