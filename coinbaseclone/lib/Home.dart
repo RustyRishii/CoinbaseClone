@@ -1,3 +1,4 @@
+import 'package:coinbaseclone/bank.dart';
 import 'package:flutter/material.dart';
 import 'package:coinbaseclone/main.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -88,7 +89,10 @@ class _homeState extends State<home> {
                 height: 50,
                 child: RaisedButton(
                   onPressed: () {
-                    //launch('https://play.google.com/store/apps/details?id=org.toshi');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const bank()),
+                    );
                   },
                   child: const Text(
                     "Add payment method",
