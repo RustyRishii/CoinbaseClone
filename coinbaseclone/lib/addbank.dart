@@ -13,7 +13,7 @@ class _addbankState extends State<addbank> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Add Bank account"),
+        title: const Text("Add Bank account"),
         centerTitle: true,
         backgroundColor: Colors.black,
       ),
@@ -21,9 +21,9 @@ class _addbankState extends State<addbank> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
-            children: <Widget>[
+            children: const <Widget>[
               Padding(
-                padding: const EdgeInsets.only(left: 20),
+                padding: EdgeInsets.only(left: 20),
                 child: Text(
                   'Enter IFSC code',
                   style: TextStyle(
@@ -34,8 +34,8 @@ class _addbankState extends State<addbank> {
               ),
             ],
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, top: 5),
+          const Padding(
+            padding: EdgeInsets.only(left: 20, top: 5),
             child: Text(
               'Enter the IFSC code',
               style: TextStyle(
@@ -44,8 +44,8 @@ class _addbankState extends State<addbank> {
                   fontSize: 17),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, top: 17),
+          const Padding(
+            padding: EdgeInsets.only(left: 20, top: 17),
             child: Text(
               'IFSC code    ℹ',
               style: TextStyle(
@@ -54,7 +54,7 @@ class _addbankState extends State<addbank> {
                   fontSize: 18),
             ),
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.only(left: 20, top: 20, right: 20),
             child: TextField(
               obscureText: true,
@@ -63,7 +63,7 @@ class _addbankState extends State<addbank> {
                 labelText: 'IFSC code',
               ),
             ),
-          )
+          ),
         ],
       ),
       backgroundColor: Colors.purple,

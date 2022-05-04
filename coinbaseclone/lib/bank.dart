@@ -1,5 +1,4 @@
 import 'package:coinbaseclone/addbank.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class bank extends StatefulWidget {
@@ -14,7 +13,7 @@ class _bankState extends State<bank> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Add a payment method"),
+        title: const Text("Add a payment method"),
         backgroundColor: Colors.black,
       ),
       body: Column(
@@ -29,7 +28,7 @@ class _bankState extends State<bank> {
             } ,
             child: Stack(
               children: <Widget>[
-                Padding(
+                const Padding(
                   padding: EdgeInsets.only(left: 10, top: 5),
                   child: Icon(
                     Icons.food_bank,
@@ -37,7 +36,7 @@ class _bankState extends State<bank> {
                     color: Colors.white,
                   ),
                 ), //Bank Icon
-                Padding(
+                const Padding(
                   padding: EdgeInsets.fromLTRB(55, 5, 0, 0),
                   child: Text(
                     "Bank transfer",
@@ -47,14 +46,14 @@ class _bankState extends State<bank> {
                         fontSize: 20),
                   ),
                 ), //Bank transfer Text
-                Padding(
+                const Padding(
                   padding: EdgeInsets.fromLTRB(55, 30, 0, 0),
                   child: Text(
                     "Sell only",
                     style: TextStyle(color: Colors.grey, fontSize: 15),
                   ),
                 ), //Sell only Text
-                Padding(
+                const Padding(
                   padding: EdgeInsets.fromLTRB(55, 50, 0, 0),
                   child: Text(
                     "Add a bank account to sell crypto. Trades processed instantly via IMPS.",
@@ -64,12 +63,12 @@ class _bankState extends State<bank> {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(50, 100, 0,0),
                   child: Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         color: Color.fromRGBO( 0, 17, 49, 1),
                         borderRadius: BorderRadius.all(Radius.circular(5),)
                     ),
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
+                    child: const Padding(
+                      padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                       child: Text(
                         "Recommended",style: TextStyle(color: Colors.blueAccent, fontSize: 23),
                       ),
@@ -79,7 +78,6 @@ class _bankState extends State<bank> {
               ],
             ),
           ),
-
         ],
       ),
       backgroundColor: Colors.black,
