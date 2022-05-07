@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class addbank extends StatefulWidget {
@@ -25,7 +24,7 @@ class _addbankState extends State<addbank> {
               Padding(
                 padding: EdgeInsets.only(left: 20),
                 child: Text(
-                  'Enter IFSC code',
+                  'Enter your IFSC code',
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
@@ -50,23 +49,31 @@ class _addbankState extends State<addbank> {
               'IFSC code    ℹ',
               style: TextStyle(
                   color: Colors.white,
-                  fontWeight:  FontWeight.bold,
+                  fontWeight: FontWeight.bold,
                   fontSize: 18),
             ),
           ),
           const Padding(
-            padding: EdgeInsets.only(left: 20, top: 20, right: 20),
+            padding: EdgeInsets.only(left: 20, top: 5, right: 20),
             child: TextField(
-              obscureText: true,
+              maxLength: 11,
+              textCapitalization: TextCapitalization.words,
+              style: TextStyle(color: Colors.white),
+              //obscureText: true,
               decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'IFSC code',
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.blueAccent, width: 1.5)
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.blueAccent, width: 1.5)
+                )
+                //labelText: 'IFSC code',
               ),
             ),
           ),
         ],
       ),
-      backgroundColor: Colors.purple,
+      backgroundColor: Colors.black,
     );
   }
 }
