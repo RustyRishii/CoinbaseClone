@@ -70,7 +70,7 @@ class _addbankState extends State<addbank> {
                 //labelText: 'IFSC code',
               ),
             ),
-          ),
+          ), //IFSC code input TextField
         ],
       ),
       backgroundColor: Colors.black,
