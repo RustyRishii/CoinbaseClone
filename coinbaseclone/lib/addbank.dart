@@ -57,7 +57,7 @@ class _addbankState extends State<addbank> {
             padding: EdgeInsets.only(left: 20, top: 5, right: 20),
             child: TextField(
               maxLength: 11,
-              textCapitalization: TextCapitalization.words,
+              textCapitalization: TextCapitalization.characters,
               style: TextStyle(color: Colors.white),
               //obscureText: true,
               decoration: InputDecoration(
