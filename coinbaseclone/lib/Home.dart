@@ -1,8 +1,10 @@
+
 import 'package:coinbaseclone/bank.dart';
 import 'package:flutter/material.dart';
 import 'package:coinbaseclone/main.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'notifications.dart';
+import 'package:cache_manager/cache_manager.dart';
 
 class home extends StatefulWidget {
   const home({Key? key}) : super(key: key);
@@ -43,9 +45,7 @@ class _homeState extends State<home> {
               onPressed: () {
                 Scaffold.of(context).openDrawer();
               },
-              tooltip: MaterialLocalizations
-                  .of(context)
-                  .openAppDrawerTooltip,
+              tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
             );
           },
         ),
@@ -292,12 +292,12 @@ class _homeState extends State<home> {
                       children: const <Widget>[
                         Text("₹ 217,779.03",
                             style:
-                            TextStyle(color: Colors.white, fontSize: 20)),
+                                TextStyle(color: Colors.white, fontSize: 20)),
                         Padding(
                           padding: EdgeInsets.fromLTRB(35, 0, 0, 0),
                           child: Text("₹ -2.83%",
                               style:
-                              TextStyle(color: Colors.red, fontSize: 20)),
+                                  TextStyle(color: Colors.red, fontSize: 20)),
                         ),
                       ],
                     ),
@@ -335,7 +335,8 @@ class _homeState extends State<home> {
                     child: Container(
                       decoration: BoxDecoration(
                           color: Colors.grey[900],
-                          borderRadius: const BorderRadius.all(Radius.circular(10))),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(10))),
                       width: 130,
                       height: 130,
                       //color: Colors.grey,
@@ -385,7 +386,8 @@ class _homeState extends State<home> {
                     child: Container(
                       decoration: BoxDecoration(
                           color: Colors.grey[900],
-                          borderRadius: const BorderRadius.all(Radius.circular(10))),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(10))),
                       width: 130,
                       height: 130,
                       //color: Colors.grey,
@@ -435,7 +437,8 @@ class _homeState extends State<home> {
                     child: Container(
                       decoration: BoxDecoration(
                           color: Colors.grey[900],
-                          borderRadius: const BorderRadius.all(Radius.circular(10))),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(10))),
                       width: 130,
                       height: 130,
                       //color: Colors.grey,
@@ -485,7 +488,8 @@ class _homeState extends State<home> {
                     child: Container(
                       decoration: BoxDecoration(
                           color: Colors.grey[900],
-                          borderRadius: const BorderRadius.all(Radius.circular(10))),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(10))),
                       width: 130,
                       height: 130,
                       //color: Colors.grey,
@@ -535,7 +539,8 @@ class _homeState extends State<home> {
                     child: Container(
                       decoration: BoxDecoration(
                           color: Colors.grey[900],
-                          borderRadius: const BorderRadius.all(Radius.circular(10))),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(10))),
                       width: 130,
                       height: 130,
                       //color: Colors.grey,
@@ -588,10 +593,7 @@ class _homeState extends State<home> {
             const Divider(height: 45, color: Colors.grey),
 
             GestureDetector(
-              onTap: () {
-                launch(
-                    'https://decrypt.co/98829/apecoin-becomes-largest-metaverse-token-surpassing-mana-sand-axs');
-              },
+              onTap: () {},
               child: Stack(
                 children: <Widget>[
                   Image.network(
@@ -600,7 +602,8 @@ class _homeState extends State<home> {
                     padding: EdgeInsets.only(top: 230, left: 9),
                     child: Text(
                       "ApeCoin Becomes Largest metaverse Token, surpassing MANA, SAND,AXS",
-                      style: TextStyle(color: Colors.white,
+                      style: TextStyle(
+                          color: Colors.white,
                           fontSize: 20,
                           fontWeight: FontWeight.bold),
                     ),
@@ -609,7 +612,8 @@ class _homeState extends State<home> {
                     padding: EdgeInsets.only(top: 290, left: 9),
                     child: Text(
                       "Among top 100 coins, secret also gained on news of its upcoming privacy- focused productivity suite.",
-                      style: TextStyle(color: Colors.white,
+                      style: TextStyle(
+                          color: Colors.white,
                           fontSize: 15,
                           fontWeight: FontWeight.bold),
                     ),
@@ -618,12 +622,24 @@ class _homeState extends State<home> {
               ),
             ),
 
-            const Divider(height: 30, color: Colors.grey,),
+            const Divider(
+              height: 30,
+              color: Colors.grey,
+            ),
 
             GestureDetector(
-              onTap: () {
-                launch(
-                    'https://www.bloomberg.com/news/articles/2022-04-29/bitcoin-bond-sale-flop-deepens-debt-market-rout-in-el-salvador');
+              onTap: () async {
+                //launch('https://www.bloomberg.com/news/articles/2022-04-29/bitcoin-bond-sale-flop-deepens-debt-market-rout-in-el-salvador');
+              final  Uri = "https://www.bloomberg.com/news/articles/2022-04-29/bitcoin-bond-sale-flop-deepens-debt-market-rout-in-el-salvador";
+
+              if(await canLaunch(Uri))
+                {
+                  await launch(Uri,
+                  forceSafariVC: true, //ios
+                    forceWebView: true, //android
+                    enableJavaScript: true
+                  );
+                }
               },
               child: Stack(
                 children: <Widget>[
@@ -633,7 +649,8 @@ class _homeState extends State<home> {
                     padding: EdgeInsets.only(top: 230, left: 9),
                     child: Text(
                       "Bitcoin Rollout in El Salvador Looks like a Bust, Survey Finds",
-                      style: TextStyle(color: Colors.white,
+                      style: TextStyle(
+                          color: Colors.white,
                           fontSize: 20,
                           fontWeight: FontWeight.bold),
                     ),
@@ -642,8 +659,9 @@ class _homeState extends State<home> {
                     padding: EdgeInsets.only(top: 290, left: 9),
                     child: Text(
                       "Bitcoin is struggling to gain traction in El Salvador --"
-                          "  the first cuntry to accept it as legal tender -- after many..",
-                      style: TextStyle(color: Colors.white,
+                      "  the first country to accept it as legal tender -- after many..",
+                      style: TextStyle(
+                          color: Colors.white,
                           fontSize: 15,
                           fontWeight: FontWeight.bold),
                     ),
