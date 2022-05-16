@@ -10,7 +10,6 @@ class trade extends StatefulWidget {
 }
 
 class _tradeState extends State<trade> {
-
   var TabBarTextStyle = const TextStyle(color: Colors.white);
 
   @override
@@ -29,37 +28,30 @@ class _tradeState extends State<trade> {
                     context,
                     MaterialPageRoute(builder: (context) => const notifs()),
                   );
-                }, icon: const Icon(Icons.notifications_active_outlined))
+                },
+                icon: const Icon(Icons.notifications_active_outlined))
           ],
           leading: Builder(
             builder: (BuildContext context) {
               return IconButton(
                 icon: const Icon(Icons.menu),
-                onPressed: () { Scaffold.of(context).openDrawer(); },
+                onPressed: () {
+                  Scaffold.of(context).openDrawer();
+                },
                 tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
               );
             },
           ),
-
-          bottom: const TabBar(
+          bottom:  TabBar(
+           // unselectedLabelColor: Color.fromRGBO( 255, 225, 255, 1),
+            unselectedLabelStyle: TextStyle(color: Colors.green),
             isScrollable: true,
-            indicator: BoxDecoration(
-              border: Border(
-                top: BorderSide(
-                  color: Colors.green,
-                ),
-                bottom: BorderSide(
-                  color: Colors.green
-                ),
-                right: BorderSide(
-                    color: Colors.green
-                ),
-                left: BorderSide(
-                    color: Colors.green
-                ),
-              )
-            ),
-            tabs: <Widget> [
+            indicator: ShapeDecoration(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(25))),
+                color: Colors.indigo[900]),
+
+            tabs: <Widget>[
               Tab(text: 'Tradeable'),
               Tab(text: 'Watchlist'),
               Tab(text: 'New on Coinbase'),
@@ -72,34 +64,22 @@ class _tradeState extends State<trade> {
           ),
         ),
         body: TabBarView(
-          children: <Widget> [
+          children: <Widget>[
             Center(
-                child: Text("Tradable", style: TabBarTextStyle,)
-            ),
-            Center(
-                child: Text("Tradable")
-            ),
-            Center(
-                child: Text("Tradable")
-            ),
-            Center(
-                child: Text("Tradable")
-            ),
-            Center(
-                child: Text("Tradable")
-            ),
-            Center(
-                child: Text("Tradable")
-            ),
-            Center(
-                child: Text("Tradable")
-            ),
-            Center(
-                child: Text("Tradable")
-            ),
+                child: Text(
+              "Tradable",
+              style: TabBarTextStyle,
+            )),
+            const Center(child: Text("Tradable")),
+            const Center(child: Text("Tradable")),
+            const Center(child: Text("Tradable")),
+            const Center(child: Text("Tradable")),
+            const Center(child: Text("Tradable")),
+            const Center(child: Text("Tradable")),
+            const Center(child: Text("Tradable")),
           ],
         ),
-        drawer: draw(),
+        drawer: const draw(),
         backgroundColor: Colors.black,
       ),
     );
