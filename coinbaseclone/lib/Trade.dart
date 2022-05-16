@@ -15,7 +15,7 @@ class _tradeState extends State<trade> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 8,
+      length: 6,
       child: Scaffold(
         appBar: AppBar(
           title: const Text("Trade"),
@@ -43,39 +43,30 @@ class _tradeState extends State<trade> {
             },
           ),
           bottom:  TabBar(
-           // unselectedLabelColor: Color.fromRGBO( 255, 225, 255, 1),
-            unselectedLabelStyle: TextStyle(color: Colors.green),
+            unselectedLabelColor: Colors.white,
             isScrollable: true,
             indicator: ShapeDecoration(
-                shape: RoundedRectangleBorder(
+                shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(25))),
                 color: Colors.indigo[900]),
-            tabs: <Widget>[
-              Tab(text: 'Tradeable'),
+            tabs: const <Widget>[
+              Tab(text: 'Tradable'),
               Tab(text: 'Watchlist'),
               Tab(text: 'New on Coinbase'),
               Tab(text: 'All assets'),
               Tab(text: 'Gainers'),
               Tab(text: 'Losers'),
-              Tab(text: 'Losers'),
-              Tab(text: 'Losers'),
             ],
           ),
         ),
-        body: TabBarView(
+        body: const TabBarView(
           children: <Widget>[
-            Center(
-                child: Text(
-              "Tradable",
-              style: TabBarTextStyle,
-            )),
-            const Center(child: Text("Tradable")),
-            const Center(child: Text("Tradable")),
-            const Center(child: Text("Tradable")),
-            const Center(child: Text("Tradable")),
-            const Center(child: Text("Tradable")),
-            const Center(child: Text("Tradable")),
-            const Center(child: Text("Tradable")),
+            Center(child: Text("Tradable")),
+            Center(child: Text("Tradable")),
+            Center(child: Text("Tradable")),
+            Center(child: Text("Tradable")),
+            Center(child: Text("Tradable")),
+            Center(child: Text("Tradable")),
           ],
         ),
         drawer: const draw(),
