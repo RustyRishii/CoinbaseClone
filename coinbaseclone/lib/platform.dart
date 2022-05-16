@@ -4,7 +4,7 @@ import 'dart:io';
 class PlatformDetector extends StatelessWidget {
   PlatformDetector({Key? key}) : super(key: key);
 
-  var PlatformStyle = TextStyle(fontSize: 20, color: Colors.white);
+  var PlatformStyle = const TextStyle(fontSize: 20, color: Colors.white);
 
   @override
   bool isIOS = Platform.isIOS;
@@ -17,6 +17,7 @@ class PlatformDetector extends StatelessWidget {
 
   static int get numberOfProcessors => numberOfProcessors;
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(

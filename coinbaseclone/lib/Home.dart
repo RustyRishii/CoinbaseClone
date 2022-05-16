@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:coinbaseclone/main.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'notifications.dart';
-import 'package:cache_manager/cache_manager.dart';
 
 class home extends StatefulWidget {
   const home({Key? key}) : super(key: key);
@@ -630,7 +629,7 @@ class _homeState extends State<home> {
             GestureDetector(
               onTap: () async {
                 //launch('https://www.bloomberg.com/news/articles/2022-04-29/bitcoin-bond-sale-flop-deepens-debt-market-rout-in-el-salvador');
-              final  Uri = "https://www.bloomberg.com/news/articles/2022-04-29/bitcoin-bond-sale-flop-deepens-debt-market-rout-in-el-salvador";
+              const  Uri = "https://www.bloomberg.com/news/articles/2022-04-29/bitcoin-bond-sale-flop-deepens-debt-market-rout-in-el-salvador";
 
               if(await canLaunch(Uri))
                 {
