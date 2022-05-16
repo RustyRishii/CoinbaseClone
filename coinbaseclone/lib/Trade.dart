@@ -50,7 +50,6 @@ class _tradeState extends State<trade> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(25))),
                 color: Colors.indigo[900]),
-
             tabs: <Widget>[
               Tab(text: 'Tradeable'),
               Tab(text: 'Watchlist'),

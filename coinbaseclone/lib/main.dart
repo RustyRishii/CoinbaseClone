@@ -1,3 +1,4 @@
+import 'package:coinbaseclone/platform.dart';
 import 'package:flutter/material.dart';
 import 'package:coinbaseclone/Assets.dart';
 import 'package:coinbaseclone/Home.dart';
@@ -187,6 +188,21 @@ class _drawState extends State<draw> {
                   ),
                 ),
               ), //Get Coinbase Wallet
+              Padding(
+                padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => PlatformDetector()),
+                    );
+                  },
+                  child: Text(
+                    "Detect Platform",
+                    style: DrawButtonTextStyle,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
