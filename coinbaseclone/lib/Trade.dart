@@ -10,6 +10,7 @@ class trade extends StatefulWidget {
 }
 
 class _tradeState extends State<trade> {
+
   var TabBarTextStyle = const TextStyle(color: Colors.white);
 
   @override
