@@ -1,4 +1,3 @@
-
 import 'package:coinbaseclone/bank.dart';
 import 'package:flutter/material.dart';
 import 'package:coinbaseclone/main.dart';
