@@ -123,7 +123,6 @@ class _walletState extends State<wallet> {
               color: Colors.grey,
             ),
           ),
-
           Padding(
             padding: const EdgeInsets.only(top: 15, bottom: 5),
             child: ButtonTheme(

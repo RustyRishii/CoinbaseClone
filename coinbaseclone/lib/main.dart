@@ -11,8 +11,39 @@ import 'invite.dart';
 import 'earn.dart';
 import 'wallet.dart';
 
+import 'package:splashscreen/splashscreen.dart';
+
 void main() {
-  runApp(const MaterialApp(home: MyApp()));
+  runApp(const Splash());
+}
+
+//Splash screen
+class Splash extends StatefulWidget {
+  const Splash({Key? key}) : super(key: key);
+
+  @override
+  State<Splash> createState() => _SplashState();
+}
+
+class _SplashState extends State<Splash> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: SplashScreen(
+            seconds: 3,
+            navigateAfterSeconds: const MyApp(),
+            title: const Text(
+              'coinbase',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 40.0,
+                  color: Colors.white),
+            ),
+            backgroundColor: const Color.fromRGBO(0, 82, 254, 1),
+            styleTextUnderTheLoader: const TextStyle(),
+            loaderColor: Colors.white));
+  }
 }
 
 class MyApp extends StatefulWidget {
@@ -23,7 +54,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
   int CurrentInt = 0;
 
   final List<Widget> children = [
@@ -57,9 +87,12 @@ class _MyAppState extends State<MyApp> {
           selectedFontSize: 15,
           currentIndex: CurrentInt,
           items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: "Home"),
-            BottomNavigationBarItem(icon: Icon(Icons.pie_chart), label: "Assets"),
-            BottomNavigationBarItem(icon: Icon(Icons.trending_up), label: "Trade"),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.home_outlined), label: "Home"),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.pie_chart), label: "Assets"),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.trending_up), label: "Trade"),
             BottomNavigationBarItem(icon: Icon(Icons.circle), label: "Pay"),
           ],
         ),
@@ -77,8 +110,8 @@ class draw extends StatefulWidget {
 }
 
 class _drawState extends State<draw> {
-
-  var DrawButtonTextStyle = const TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white);
+  var DrawButtonTextStyle = const TextStyle(
+      fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white);
 
   @override
   Widget build(BuildContext context) {
@@ -108,12 +141,12 @@ class _drawState extends State<draw> {
                 padding: EdgeInsets.only(top: 19),
                 child: Center(
                     child: Text(
-                      "Anonymous",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 35,
-                          color: Colors.white),
-                    )),
+                  "Anonymous",
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 35,
+                      color: Colors.white),
+                )),
               ), //Name Anonymous
               Padding(
                 padding: const EdgeInsets.fromLTRB(15, 10, 15, 35),
@@ -194,11 +227,12 @@ class _drawState extends State<draw> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => PlatformDetector()),
+                      MaterialPageRoute(
+                          builder: (context) => PlatformDetector()),
                     );
                   },
                   child: Text(
-                    "Detect Platform",
+                    "🛠 Detect Platform",
                     style: DrawButtonTextStyle,
                   ),
                 ),
