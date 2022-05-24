@@ -1,6 +1,9 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:coinbaseclone/main.dart';
 import 'notifications.dart';
+import 'package:coinbaseclone/Trade.dart';
 
 class assets extends StatefulWidget {
   const assets({Key? key}) : super(key: key);
@@ -107,7 +110,13 @@ class _assetsState extends State<assets> {
                   minWidth: 350,
                   height: 50,
                   child: RaisedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => trade()),
+                      );
+                    },
                     child: const Text(
                       "Explore assets",
                       style: TextStyle(fontSize: 20, color: Colors.white),

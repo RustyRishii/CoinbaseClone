@@ -102,6 +102,7 @@ class _MyAppState extends State<MyApp> {
   }
 }
 
+//Drawer widget
 class draw extends StatefulWidget {
   const draw({Key? key}) : super(key: key);
 
@@ -110,7 +111,6 @@ class draw extends StatefulWidget {
 }
 
 class _drawState extends State<draw> {
-
   var DrawButtonTextStyle = const TextStyle(
       fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white);
 
@@ -484,3 +484,6 @@ class _drawState extends State<MyApp> {
 
 
  */
+
+
+

@@ -12,6 +12,7 @@ class home extends StatefulWidget {
 }
 
 class _homeState extends State<home> {
+
   //TextStyle1 for the Buy,sell,send,receive,convert TEXTS
   var TextStyle1 = const TextStyle(
       color: Colors.black, fontSize: 30, fontWeight: FontWeight.bold);
@@ -22,6 +23,7 @@ class _homeState extends State<home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
         title: const Text('Home'),
         centerTitle: true,
@@ -48,7 +50,9 @@ class _homeState extends State<home> {
           },
         ),
       ),
+
       drawer: const draw(),
+
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
@@ -235,6 +239,7 @@ class _homeState extends State<home> {
                     )
                   ],
                 ),
+
                 Padding(
                   padding: const EdgeInsets.fromLTRB(140, 0, 0, 0),
                   child: Column(

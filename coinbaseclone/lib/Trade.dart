@@ -70,6 +70,7 @@ class _tradeState extends State<trade> {
             Center(child: Text("Tradable")),
           ],
         ),
+        //bottomNavigationBar: MyApp(),
         drawer: const draw(),
         backgroundColor: Colors.black,
       ),
