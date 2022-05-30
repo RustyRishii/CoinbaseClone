@@ -239,7 +239,6 @@ class _homeState extends State<home> {
                     )
                   ],
                 ),
-
                 Padding(
                   padding: const EdgeInsets.fromLTRB(140, 0, 0, 0),
                   child: Column(
