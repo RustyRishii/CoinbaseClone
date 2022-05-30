@@ -486,4 +486,25 @@ class _drawState extends State<MyApp> {
  */
 
 
+/*
 
+import'dart:10';
+import package:webview_flutter/webview_flutter.dart';
+ class WebViewExample extends Statefulwidget{
+   Boverride
+   WebViewExamplestate createState()=>WebViewExampleState();
+}
+ class WebViewExamplestate extends State<WebViewExample>{
+   Goverride
+   void initstate(){
+     super.initstate();
+     // Enable virtual display.
+     if(Platform.isAndroid)WebView.platform-AndroidWebView();
+  }
+   @override
+  Widget build(BuildContext context){
+     return WebView(
+       initialurl:https://pub.dev/packages/webview_flutter/install'
+    );
+ }
+ */

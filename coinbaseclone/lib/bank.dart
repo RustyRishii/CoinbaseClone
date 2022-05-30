@@ -70,7 +70,7 @@ class _bankState extends State<bank> {
                     child: const Padding(
                       padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                       child: Text(
-                        "Recommended",style: TextStyle(color: Colors.blueAccent, fontSize: 23),
+                        "Recommended",style: TextStyle(color: Colors.blueAccent, fontSize: 20)
                       ),
                     ),
                   ),
