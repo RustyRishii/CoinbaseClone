@@ -1,10 +1,10 @@
-import 'package:coinbaseclone/platform.dart';
-import 'package:flutter/material.dart';
-import 'package:coinbaseclone/Assets.dart';
-import 'package:coinbaseclone/Home.dart';
-import 'package:coinbaseclone/Pay.dart';
-import 'package:coinbaseclone/Trade.dart';
-import 'package:coinbaseclone/wallet.dart';
+import 'package:coinbaseclone/platform.dart' show PlatformDetector;
+import 'package:flutter/material.dart' show Border, BorderSide, BottomNavigationBar, BottomNavigationBarItem, BottomNavigationBarType, BoxDecoration, BuildContext, Center, CircleAvatar, Color, Colors, Container, Drawer, EdgeInsets, ElevatedButton, FontWeight, GestureDetector, Icon, Icons, Key, ListView, MaterialApp, MaterialPageRoute, Navigator, NetworkImage, Padding, SafeArea, Scaffold, Size, StadiumBorder, State, StatefulWidget, Text, TextAlign, TextButton, TextStyle, Widget, runApp;
+import 'package:coinbaseclone/Assets.dart' show assets;
+import 'package:coinbaseclone/Home.dart' show home;
+import 'package:coinbaseclone/Pay.dart' show pay;
+import 'package:coinbaseclone/Trade.dart' show trade;
+import 'package:coinbaseclone/wallet.dart' show wallet;
 
 import 'image.dart';
 import 'invite.dart';
